@@ -38,6 +38,7 @@ body {
     text-transform: uppercase;
     font-size: 12px;
     padding: 23px 0;
+    transition: color 0.3s ease-out;
   }
   &__link:hover {
     color: #00acdc;
@@ -89,7 +90,16 @@ html {
     height: 403px;
   }
   &__image {
-    margin: 30px auto 45px;
+    margin: 15px auto 27px;
+    padding-top: 10px;
+    transition: transform 1s;
+    border: 3px solid transparent;
+    border-radius: 4px;
+
+    &:hover {
+      transform: scale(1.2);
+      border-color: #eee;
+    }
   }
   &__header {
     margin: 0;
@@ -154,6 +164,7 @@ html {
     border-radius: 5px;
     text-decoration: none;
     text-transform: uppercase;
+    transition: color 0.3s linear, background 0.3s ease-out;
   }
   &__button:hover {
     background-color: #fff;
