@@ -70,11 +70,12 @@ html {
 }
 
 .catalog {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
   width: 944px;
-  margin: 50px auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
+  gap: 50px 48px;
+  margin: 0 auto 78px;
 
   &__card {
     display: flex;
