@@ -68,16 +68,14 @@ html {
   line-height: 13px; }
 
 .catalog {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   width: 944px;
-  margin: 50px auto; }
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 50px 48px;
+  margin: 0 auto 78px; }
   .catalog__card {
     display: -webkit-box;
     display: -ms-flexbox;
